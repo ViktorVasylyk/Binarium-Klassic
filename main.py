@@ -17,7 +17,7 @@ log = logging.getLogger("binarium-webapp-bot")
 BASE_DIR = Path(__file__).resolve().parent
 WEBAPP_DIR = BASE_DIR
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8794195724:AAH_JSB_LUsdUEu-cWhtxSaUsGBpuwntXlY").strip()
 WEBAPP_URL = os.getenv("WEBAPP_URL", "").strip()
 RAILWAY_PUBLIC_DOMAIN = os.getenv("RAILWAY_PUBLIC_DOMAIN", "").strip()
 PORT = int(os.getenv("PORT", "8000"))
