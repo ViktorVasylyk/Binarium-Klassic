@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Binarium AI Terminal</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="loginScreen" class="screen active">
+      <div class="topbar"><span>BINARIUM AI</span><button id="langBtn">RU</button></div>
+      <div class="login-card">
+        <div class="logo">B</div>
+        <h1>AI TERMINAL</h1>
+        <p>Закрытый доступ к сигналам Binarium</p>
+        <input id="passwordInput" type="password" placeholder="Введите пароль" />
+        <button id="loginBtn" class="primary">Войти</button>
+        <small id="loginError"></small>
+      </div>
+    </section>
+
+    <section id="assetsScreen" class="screen">
+      <div class="topbar"><span>BINARIUM ASSETS</span><button id="logoutBtn">×</button></div>
+      <h2>Выберите актив</h2>
+      <div id="assetsList" class="assets"></div>
+    </section>
+
+    <section id="loadingScreen" class="screen">
+      <div class="scanner">
+        <div class="pulse"></div>
+        <h2>Анализ рынка...</h2>
+        <p id="loadingAsset">EUR/USD</p>
+        <div class="bar"><span></span></div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="result-card">
+        <div class="label">SIGNAL RESULT</div>
+        <h1 id="signalText">BUY</h1>
+        <div id="arrow" class="arrow up">↑</div>
+        <div class="info"><span>Актив</span><b id="resultAsset">EUR/USD</b></div>
+        <div class="info"><span>Таймфрейм</span><b>M1</b></div>
+        <div class="info"><span>Экспирация</span><b>60 секунд</b></div>
+        <div class="info"><span>Сила сигнала</span><b id="strength">82%</b></div>
+        <button id="repeatBtn" class="primary">Повторить анализ</button>
+        <button id="backBtn" class="secondary">Выбрать другой актив</button>
+      </div>
+    </section>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
